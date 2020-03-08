@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "paths": {
+      "@src/*": ["*"]
+    },
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "declaration": false,
+    "sourceMap": true,
+    "removeComments": true,
+    "noUnusedLocals": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "outDir": "./dist",
+    "rootDir": ".",
+    "baseUrl": "src",
+    "strictNullChecks": false,
+    "noEmit": true,
+    "noImplicitAny": false,
+    "typeRoots": ["node_modules/@types", "typings"]
+  },
+  "include": ["src", "src/typings/styled-components.d.ts", "src/typings/react.d.ts"],
+  "exclude": ["node_modules"]
+}

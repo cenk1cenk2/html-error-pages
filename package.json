@@ -5,7 +5,7 @@
   "scripts": {
     "start": "next start",
     "dev:start": "next",
-    "lint": "eslint --ext .json,.ts,.js,tsx,jsx --fix ./src",
+    "lint": "eslint --fix --ext .json,.ts,.js,tsx,jsx ./src",
     "dev:lint": "lint-staged",
     "build": "next build"
   },
@@ -26,8 +26,11 @@
     "@fortawesome/react-fontawesome": "^0.1.8",
     "@material-ui/core": "^4.9.5",
     "@types/styled-components": "^4",
+    "@zeit/next-sass": "^1.0.1",
     "csstype": "^2.6.9",
+    "http-status": "^1.4.2",
     "next": "^9.2.2",
+    "node-sass": "^4.13.1",
     "react": "^16.12.0",
     "react-animations": "^1.0.0",
     "react-dom": "^16.12.0",
@@ -38,7 +41,7 @@
     "typescript": "^3.8.2"
   },
   "devDependencies": {
-    "@cenk1cenk2/eslint-config": "*",
+    "@cenk1cenk2/eslint-config": "0.0.30",
     "@testing-library/jest-dom": "^5.1.1",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^10.0.0",

@@ -1,12 +1,12 @@
 import { ServerStyleSheets as MaterialUiServerStyleSheets } from '@material-ui/styles'
 import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document'
-import React, {Fragment} from 'react'
+import React, { Fragment } from 'react'
 import { ServerStyleSheet as StyledComponentSheets } from 'styled-components'
 
 import { ITheme } from '@src/interfaces/styles.interface'
 import Theme from '@src/themes'
 
-export default class MyDocument extends Document<{themes: ITheme}> {
+class MyDocument extends Document<{themes: ITheme}> {
   static async getInitialProps (ctx: DocumentContext) {
     const styledComponentSheet = new StyledComponentSheets()
     const materialUiSheets = new MaterialUiServerStyleSheets()
@@ -58,3 +58,5 @@ export default class MyDocument extends Document<{themes: ITheme}> {
   }
 
 }
+
+export default MyDocument

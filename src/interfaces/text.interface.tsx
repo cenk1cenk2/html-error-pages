@@ -1,4 +1,4 @@
-import {LineHeightProperty, FontWeightProperty, FontSizeProperty, ColorProperty} from 'csstype'
+import { LineHeightProperty, FontWeightProperty, FontSizeProperty, ColorProperty } from 'csstype'
 
 export interface ITextConfig {
   font: Record<FontTypes, FontImports>
@@ -22,11 +22,11 @@ T extends 'heading' ?
   | 'h5'
   | 'h6'
   :
-T extends 'default' ?
-  | 'p'
-  | 'small'
-  :
-never
+  T extends 'default' ?
+    | 'p'
+    | 'small'
+    :
+    never
 
 interface Settings {
   heading: HeadingSettings

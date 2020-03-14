@@ -2,8 +2,8 @@ import { ITextConfig } from 'interfaces/text.interface'
 
 export const text: ITextConfig = {
   font: {
-    heading: { name: 'Raleway' , path: 'Raleway-Regular.ttf' },
-    default: { name: 'Lato', path: 'Lato-Regular.ttf' }
+    heading: { name: 'Roboto', path: 'roboto' },
+    default: { name: 'Lato', path: 'lato' }
   },
   typography: {
     heading: {
@@ -42,11 +42,11 @@ export const text: ITextConfig = {
     heading: {
       color: 'inherit',
       smallColor: '#777777',
-      fontWeight: 600,
+      fontWeight: 700,
       lineHeight: 1.2
     },
     default: {
-      fontWeight: 300,
+      fontWeight: 400,
       lineHeight: 1
     }
   }

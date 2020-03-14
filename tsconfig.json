@@ -28,8 +28,8 @@
     "strictNullChecks": false,
     "noEmit": true,
     "noImplicitAny": false,
-    "typeRoots": ["node_modules/@types", "typings"]
+    "typeRoots": ["node_modules/@types", "typings", "next", "next/types/global", "src/typings"]
   },
-  "include": ["src", "src/typings/styled-components.d.ts", "src/typings/react.d.ts"],
+  "include": ["src"],
   "exclude": ["node_modules"]
 }

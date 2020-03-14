@@ -4,11 +4,11 @@ import { ITheme } from 'interfaces/styles.interface'
 import { text } from './default.text'
 
 const colors = {
-  primary: '#f02424',
-  secondary: '#f01520',
-  success: '#46c37b',
-  warning: '#f3b760',
-  error: '#d26a5c',
+  primary: '#454447',
+  secondary: '#aaaaaa',
+  success: '#78F029',
+  warning: '#F0CE5C',
+  error: '#F01C34',
   text: '#efefef',
   muted: '#777777',
   logo: '#f02424'
@@ -23,7 +23,7 @@ const template = {
 }
 
 const muiTheme = createMuiTheme({
-  spacing: 2,
+  spacing: 20,
   palette: {
     type: 'dark',
     background: {

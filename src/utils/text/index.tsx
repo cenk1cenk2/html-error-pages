@@ -13,6 +13,7 @@ const createComponent: (
       {props?.children}
     </StyledComponent>
   )
+
   component.displayName = displayName
   return component
 }

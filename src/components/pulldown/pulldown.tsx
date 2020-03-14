@@ -28,10 +28,8 @@ export class Pulldown extends Component {
       <React.Fragment>
         <StyledGrid container direction="column" spacing={10}>
           <Container maxWidth="md">
-            <StyledBox boxShadow={3}>
-              <Grid container direction="column" alignItems="center">
-                {this.props?.children}
-              </Grid>
+            <StyledBox boxShadow={5}>
+              {this.props?.children}
             </StyledBox>
             <BottomLogo />
           </Container>

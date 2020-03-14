@@ -2,11 +2,12 @@ import { CssBaseline, StylesProvider, ThemeProvider } from '@material-ui/core'
 import NextApp from 'next/app'
 import React, { Fragment } from 'react'
 import { ThemeProvider as StyledThemeProvider } from 'styled-components'
+import '@src/themes/utils.scss'
 
 import { ITheme } from '@src/interfaces/styles.interface'
-import Theme, { GlobalStyles, GlobalUtils } from '@src/themes'
+import Theme, { GlobalStyles } from '@src/themes'
 
-export default class MyApp extends NextApp<ITheme> {
+class MyApp extends NextApp<ITheme> {
   componentDidMount () {
     const jssStyles = document.querySelector('#jss-server-side')
 
@@ -25,7 +26,6 @@ export default class MyApp extends NextApp<ITheme> {
             <StyledThemeProvider theme={Theme}>
               <CssBaseline />
               <GlobalStyles theme={Theme} />
-              <GlobalUtils theme={Theme} />
               <Component {...pageProps} />
             </StyledThemeProvider>
           </ThemeProvider>
@@ -34,3 +34,5 @@ export default class MyApp extends NextApp<ITheme> {
     )
   }
 }
+
+export default MyApp

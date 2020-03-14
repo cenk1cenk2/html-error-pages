@@ -6,7 +6,7 @@ import styled from 'styled-components'
 const StyledGrid = styled(Grid)`
   ${({ theme }) => `
   position: absolute;
-  top: 25px;
+  top: 0px;
 
   ${theme.breakpoints.up('sm')} {
    top: 50%;
@@ -22,17 +22,21 @@ const StyledBox = styled(Box)`
 `};
 `
 
+const StyledContainer = styled(Container)`
+  padding: 0;
+`
+
 export class Pulldown extends Component {
   render () {
     return (
       <React.Fragment>
-        <StyledGrid container direction="column" spacing={10}>
-          <Container maxWidth="md">
+        <StyledGrid container direction="column">
+          <StyledContainer maxWidth="md">
             <StyledBox boxShadow={5}>
               {this.props?.children}
             </StyledBox>
             <BottomLogo />
-          </Container>
+          </StyledContainer>
         </StyledGrid>
       </React.Fragment>
     )

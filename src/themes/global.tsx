@@ -12,7 +12,7 @@ ${icons(theme)}
 
 function body (theme: DefaultTheme) {
   const o = `
-  body {
+  body, #__next {
     overflow-x: hidden;
     height: 100%;
     width: 100%;

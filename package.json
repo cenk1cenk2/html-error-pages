@@ -9,7 +9,6 @@
     "dev:lint": "lint-staged",
     "build": "yarn bundle && next export -o dist",
     "bundle": "next build"
-
   },
   "husky": {
     "hooks": {

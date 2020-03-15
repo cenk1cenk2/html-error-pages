@@ -50,7 +50,7 @@ class Root extends Component<Props> {
   private parseErrorCode (code: string) {
     return (
       <Fragment>
-        {httpStatus[code] ? httpStatus[code] : 'Unknown error.'}
+        {httpStatus[code] ? httpStatus[code] : 'Unknown server error'}
       </Fragment>
     )
   }

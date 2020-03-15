@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Grid, Button } from '@material-ui/core'
 import { Skeleton } from '@material-ui/lab'
 import httpStatus from 'http-status'
+import Head from 'next/head'
 import Link from 'next/link'
 import { withRouter, NextRouter } from 'next/router'
 import { Component, Fragment } from 'react'
@@ -23,6 +24,9 @@ export default class Root extends Component<Props> {
     const from = this.props.router.query.from as string
     return (
       <Fragment>
+        <Head>
+          <title key="title">kilic.dev!error</title>
+        </Head>
         <Pulldown>
           <Grid container direction="column" alignItems="center" alignContent="center" spacing={1}>
             <Grid item>

@@ -3,10 +3,11 @@ import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/do
 import React, { Fragment } from 'react'
 import { ServerStyleSheet as StyledComponentSheets } from 'styled-components'
 
-import { ITheme } from '@src/interfaces/styles.interface'
-import Theme from '@src/themes'
+import PageLoader from '../themes/page-loader'
+import { ITheme } from '@interfaces/styles.interface'
+import Theme from '@themes/index'
 
-class MyDocument extends Document<{themes: ITheme}> {
+export default class MyDocument extends Document<{themes: ITheme}> {
   static async getInitialProps (ctx: DocumentContext) {
     const styledComponentSheet = new StyledComponentSheets()
     const materialUiSheets = new MaterialUiServerStyleSheets()
@@ -41,14 +42,21 @@ class MyDocument extends Document<{themes: ITheme}> {
         <Html lang="en">
           <Head>
             <link rel="icon" href="/favicon.ico" />
+            <link rel="stylesheet" type="text/css" href="/styles/pageloader.css" />
             <meta name="description" content="kilic.dev!" />
             <meta name="author" content="cenk.kilic" />
             <meta name="theme-color" content={Theme.palette.primary.main} />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <meta name="description" content="Web site created using create-react-app" />
             <link rel="manifest" href="manifest.json" />
+            <style
+              dangerouslySetInnerHTML={{
+                __html: 'body{display:block}'
+              }}
+            />
           </Head>
           <body>
+            <PageLoader />
             <Main />
             <NextScript />
           </body>
@@ -58,5 +66,3 @@ class MyDocument extends Document<{themes: ITheme}> {
   }
 
 }
-
-export default MyDocument

@@ -1,29 +1,41 @@
 import { faArrowLeft, faRedo } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Grid, Button } from '@material-ui/core'
+import { Skeleton } from '@material-ui/lab'
 import httpStatus from 'http-status'
 import Link from 'next/link'
 import { withRouter, NextRouter } from 'next/router'
 import { Component, Fragment } from 'react'
+import { RouteComponentProps } from 'react-router-dom'
 
-import { Pulldown } from '@src/components/pulldown'
+import { Pulldown } from '@components/pulldown'
 
-interface Props {
+interface Props extends Partial<RouteComponentProps> {
   router: NextRouter
 }
 
-class Root extends Component<Props> {
+@(withRouter as any)
+export default class Root extends Component<Props> {
 
   render () {
+    const errCode = this.props.router.query.code as string
+    const parsedErrMsg = this.parseErrMsg(errCode)
+    const from = this.props.router.query.from as string
     return (
       <Fragment>
         <Pulldown>
           <Grid container direction="column" alignItems="center" alignContent="center" spacing={1}>
             <Grid item>
-              <h1 className="text-error">{this.props.router.query.code ? this.props.router.query.code : '502'}</h1>
+              <h1 className="text-error">
+                {
+                  errCode ?
+                    errCode :
+                    <Skeleton variant="text" width={100} />
+                }
+              </h1>
             </Grid>
             <Grid item>
-              <h4>{this.parseErrorCode(this.props.router.query.code as string)}</h4>
+              <h4>{parsedErrMsg ? parsedErrMsg : <Skeleton variant="text" width={200} />}</h4>
             </Grid>
             <Grid item>
               <Link href="https://kilic.dev" passHref prefetch={false}>
@@ -32,8 +44,8 @@ class Root extends Component<Props> {
                 </Button>
               </Link>
               {
-                this.props.router.query.from ?
-                  <Link href={this.props.router.query.from as string} passHref prefetch={false}>
+                from ?
+                  <Link href={from} passHref prefetch={false}>
                     <Button variant="contained" color="primary">
                       <FontAwesomeIcon icon={faRedo} className="font-s3" />
                     </Button>
@@ -47,7 +59,7 @@ class Root extends Component<Props> {
     )
   }
 
-  private parseErrorCode (code: string) {
+  private parseErrMsg (code: string) {
     return (
       <Fragment>
         {httpStatus[code] ? httpStatus[code] : 'Unknown server error'}
@@ -55,5 +67,3 @@ class Root extends Component<Props> {
     )
   }
 }
-
-export default withRouter(Root)

@@ -2,7 +2,15 @@
   "compilerOptions": {
     "target": "es5",
     "paths": {
-      "@src/*": ["*"]
+      "@src/*": ["*"],
+      "@components/*": ["components/*"],
+      "@hooks/*": ["hooks/*"],
+      "@interfaces/*": ["interfaces/*"],
+      "@context/*": ["interfaces/pages/*"],
+      "@pages/*": ["pages/*"],
+      "@themes/*": ["themes/*"],
+      "@templates/*": ["templates/*"],
+      "@page-templates/*": ["templates/pages/*"]
     },
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,

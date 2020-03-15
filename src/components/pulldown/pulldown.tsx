@@ -1,6 +1,6 @@
 import { Box, Container, Grid } from '@material-ui/core'
 import { BottomLogo } from 'components/logo/index'
-import React, { Component } from 'react'
+import { Component, Fragment } from 'react'
 import styled from 'styled-components'
 
 const StyledGrid = styled(Grid)`
@@ -29,7 +29,7 @@ const StyledContainer = styled(Container)`
 export class Pulldown extends Component {
   render () {
     return (
-      <React.Fragment>
+      <Fragment>
         <StyledGrid container direction="column">
           <StyledContainer maxWidth="md">
             <StyledBox boxShadow={5}>
@@ -38,7 +38,7 @@ export class Pulldown extends Component {
             <BottomLogo />
           </StyledContainer>
         </StyledGrid>
-      </React.Fragment>
+      </Fragment>
     )
   }
 }

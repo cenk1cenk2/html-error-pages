@@ -25,7 +25,6 @@ steps:
       repo: docker.ev.kilic.dev/${DRONE_REPO_NAME,,}
       tags:
         - latest
-        - ${DRONE_TAG}
       username:
         from_secret: docker_username
       password:

@@ -1,6 +1,6 @@
 {
   "name": "@kilic.dev/error-pages",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "license": "MIT",
   "scripts": {
     "start": "next start",
@@ -26,12 +26,14 @@
     "@fortawesome/free-solid-svg-icons": "^5.12.1",
     "@fortawesome/react-fontawesome": "^0.1.8",
     "@material-ui/core": "^4.9.5",
+    "@material-ui/lab": "^4.0.0-alpha.45",
     "@types/styled-components": "^4",
     "@zeit/next-sass": "^1.0.1",
     "csstype": "^2.6.9",
     "http-status": "^1.4.2",
     "next": "^9.2.2",
     "node-sass": "^4.13.1",
+    "nprogress": "^0.2.0",
     "react": "^16.12.0",
     "react-animations": "^1.0.0",
     "react-dom": "^16.12.0",
@@ -41,6 +43,7 @@
     "typescript": "^3.8.2"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.8.3",
     "@cenk1cenk2/eslint-config": "0.0.30",
     "@testing-library/jest-dom": "^5.1.1",
     "@testing-library/react": "^9.3.2",

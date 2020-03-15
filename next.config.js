@@ -10,10 +10,10 @@ module.exports = {
     }
 
     const { dev, isServer } = options
-    const {cssModules,
+    const { cssModules,
       cssLoaderOptions,
       postcssLoaderOptions,
-      sassLoaderOptions = {}} = config
+      sassLoaderOptions = {} } = config
 
     options.defaultLoaders.sass = cssLoaderConfig(config, {
       extensions: [ 'scss', 'sass' ],

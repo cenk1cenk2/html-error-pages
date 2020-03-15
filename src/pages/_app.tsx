@@ -1,18 +1,31 @@
 import { CssBaseline, StylesProvider, ThemeProvider } from '@material-ui/core'
 import NextApp from 'next/app'
+import Router from 'next/router'
+import NProgress from 'nprogress'
 import React, { Fragment } from 'react'
 import { ThemeProvider as StyledThemeProvider } from 'styled-components'
-import '@src/themes/utils.scss'
 
-import { ITheme } from '@src/interfaces/styles.interface'
-import Theme, { GlobalStyles } from '@src/themes'
+import { ITheme } from '@interfaces/styles.interface'
+import Theme, { GlobalStyles } from '@themes/index'
+import '@themes/utils.scss'
 
-class MyApp extends NextApp<ITheme> {
+Router.events.on('routeChangeStart', (url) => {
+  NProgress.start()
+})
+Router.events.on('routeChangeComplete', () => NProgress.done())
+Router.events.on('routeChangeError', () => NProgress.done())
+
+export default class MyApp extends NextApp<ITheme> {
   componentDidMount () {
     const jssStyles = document.querySelector('#jss-server-side')
 
-    if (jssStyles && jssStyles.parentNode) {
+    if (jssStyles?.parentNode) {
       jssStyles.parentNode.removeChild(jssStyles)
+    }
+    const progressOverlay = document.querySelector('#page-loader')
+
+    if (progressOverlay?.parentNode) {
+      progressOverlay.parentNode.removeChild(progressOverlay)
     }
   }
 
@@ -34,5 +47,3 @@ class MyApp extends NextApp<ITheme> {
     )
   }
 }
-
-export default MyApp

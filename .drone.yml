@@ -23,8 +23,10 @@ steps:
       dockerfile: dockerfile.release
       registry: docker.ev.kilic.dev
       repo: docker.ev.kilic.dev/${DRONE_REPO_NAME,,}
+      tags:
+        - latest
+        - ${DRONE_TAG}
       username:
         from_secret: docker_username
       password:
         from_secret: docker_password
-      auto_tag: true

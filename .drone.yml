@@ -21,8 +21,8 @@ steps:
     image: plugins/docker
     settings:
       dockerfile: dockerfile.release
-      registry: docker.ev.kilic.dev
-      repo: docker.ev.kilic.dev/${DRONE_REPO_NAME,,}
+      registry: docker.kilic.dev
+      repo: docker.kilic.dev/${DRONE_REPO_NAME,,}
       tags:
         - latest
       username:

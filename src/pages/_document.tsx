@@ -1,26 +1,28 @@
+import { Theme } from '@cenk1cenk2/react-template-base'
 import { ServerStyleSheets as MaterialUiServerStyleSheets } from '@material-ui/styles'
-import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document'
+import Document, { DocumentContext, Head, Html, Main, NextScript } from 'next/document'
 import React, { Fragment } from 'react'
 import { ServerStyleSheet as StyledComponentSheets } from 'styled-components'
 
 import PageLoader from '../themes/page-loader'
-import { ITheme } from '@interfaces/styles.interface'
-import Theme from '@themes/index'
+import '../polyfills'
 
-export default class MyDocument extends Document<{themes: ITheme}> {
+export default class MyDocument extends Document<{ theme: Theme }> {
   static async getInitialProps (ctx: DocumentContext) {
     const styledComponentSheet = new StyledComponentSheets()
     const materialUiSheets = new MaterialUiServerStyleSheets()
+
     const originalRenderPage = ctx.renderPage
+
+    ctx.renderPage = () =>
+      originalRenderPage({
+        enhanceApp: (App) => (props) => styledComponentSheet.collectStyles(materialUiSheets.collect(<App {...props} />)),
+        enhanceComponent: (Component) => Component
+      })
+
     try {
-      ctx.renderPage = () =>
-        originalRenderPage({
-          enhanceApp: (App) => (props) =>
-            styledComponentSheet.collectStyles(
-              materialUiSheets.collect(<App {...props} />)
-            )
-        })
       const initialProps = await Document.getInitialProps(ctx)
+
       return {
         ...initialProps,
         styles: [
@@ -45,12 +47,11 @@ export default class MyDocument extends Document<{themes: ITheme}> {
             <link rel="stylesheet" type="text/css" href="/styles/pageloader.css" />
             <meta name="description" content="kilic.dev!" />
             <meta name="author" content="cenk.kilic" />
-            <meta name="theme-color" content={Theme.palette.primary.main} />
-            <meta name="viewport" content="width=device-width, initial-scale=1" />
             <meta name="description" content="Web site created using create-react-app" />
             <link rel="manifest" href="manifest.json" />
             <style
               dangerouslySetInnerHTML={{
+                // eslint-disable-next-line @typescript-eslint/naming-convention
                 __html: 'body{display:block}'
               }}
             />
@@ -64,5 +65,4 @@ export default class MyDocument extends Document<{themes: ITheme}> {
       </Fragment>
     )
   }
-
 }

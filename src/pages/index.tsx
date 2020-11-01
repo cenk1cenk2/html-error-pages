@@ -1,73 +1,60 @@
+import { Pulldown } from '@cenk1cenk2/react-template-components'
 import { faArrowLeft, faRedo } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Grid, Button } from '@material-ui/core'
+import { Button, Grid } from '@material-ui/core'
 import { Skeleton } from '@material-ui/lab'
 import httpStatus from 'http-status'
 import Head from 'next/head'
 import Link from 'next/link'
-import { withRouter, NextRouter } from 'next/router'
-import { Component, Fragment } from 'react'
+import { useRouter } from 'next/router'
+import React, { Fragment } from 'react'
 import { RouteComponentProps } from 'react-router-dom'
+import Loading from '../../public/imgs/logo/loading.svg'
 
-import { Pulldown } from '@components/pulldown'
+type Props = Partial<RouteComponentProps>
 
-interface Props extends Partial<RouteComponentProps> {
-  router: NextRouter
-}
+const Page: React.FC<Props> = () => {
+  const router = useRouter()
 
-@(withRouter as any)
-export default class Root extends Component<Props> {
+  const errCode = router.query.code as string
+  const parsedErrMsg = parseErrMsg(errCode)
+  const from = router.query.from as string
 
-  render () {
-    const errCode = this.props.router.query.code as string
-    const parsedErrMsg = this.parseErrMsg(errCode)
-    const from = this.props.router.query.from as string
-    return (
-      <Fragment>
-        <Head>
-          <title key="title">kilic.dev!error</title>
-        </Head>
-        <Pulldown>
-          <Grid container direction="column" alignItems="center" alignContent="center" spacing={1}>
-            <Grid item>
-              <h1 className="text-error">
-                {
-                  errCode ?
-                    errCode :
-                    <Skeleton variant="text" width={100} />
-                }
-              </h1>
-            </Grid>
-            <Grid item>
-              <h4>{parsedErrMsg ? parsedErrMsg : <Skeleton variant="text" width={200} />}</h4>
-            </Grid>
-            <Grid item>
-              <Link href="https://kilic.dev" passHref prefetch={false}>
+  return (
+    <Fragment>
+      <Head>
+        <title key="title">kilic.dev!error</title>
+      </Head>
+      <Pulldown logo={Loading} package={{ name: 'test', version: 'teest' }}>
+        <Grid container direction="column" alignItems="center" alignContent="center" spacing={1}>
+          <Grid item>
+            <h1 className="text-error">{errCode ? errCode : <Skeleton variant="text" width={100} />}</h1>
+          </Grid>
+          <Grid item>
+            <h4>{parsedErrMsg ? parsedErrMsg : <Skeleton variant="text" width={200} />}</h4>
+          </Grid>
+          <Grid item>
+            <Link href="https://kilic.dev" passHref prefetch={false}>
+              <Button variant="contained" color="primary">
+                <FontAwesomeIcon icon={faArrowLeft} className="font-s3" />
+              </Button>
+            </Link>
+            {from ? (
+              <Link href={from} passHref prefetch={false}>
                 <Button variant="contained" color="primary">
-                  <FontAwesomeIcon icon={faArrowLeft} className="font-s3" />
+                  <FontAwesomeIcon icon={faRedo} className="font-s3" />
                 </Button>
               </Link>
-              {
-                from ?
-                  <Link href={from} passHref prefetch={false}>
-                    <Button variant="contained" color="primary">
-                      <FontAwesomeIcon icon={faRedo} className="font-s3" />
-                    </Button>
-                  </Link>
-                  : null
-              }
-            </Grid>
+            ) : null}
           </Grid>
-        </Pulldown>
-      </Fragment>
-    )
-  }
+        </Grid>
+      </Pulldown>
+    </Fragment>
+  )
+}
 
-  private parseErrMsg (code: string) {
-    return (
-      <Fragment>
-        {httpStatus[code] ? httpStatus[code] : 'Unknown server error'}
-      </Fragment>
-    )
-  }
+export default Page
+
+function parseErrMsg (code: string) {
+  return <Fragment>{httpStatus[code] ?? 'Unknown server error'}</Fragment>
 }

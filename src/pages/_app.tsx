@@ -1,22 +1,21 @@
+import { AvailableDesigns, AvailablePalettes, generateTheme, GlobalStyles, Theme } from '@cenk1cenk2/react-template-base'
 import { CssBaseline, StylesProvider, ThemeProvider } from '@material-ui/core'
-import NextApp from 'next/app'
+import '@themes/utils.scss'
+import { NextComponentType } from 'next'
+import { AppContext, AppInitialProps, AppProps } from 'next/app'
 import Router from 'next/router'
 import NProgress from 'nprogress'
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect } from 'react'
 import { ThemeProvider as StyledThemeProvider } from 'styled-components'
 
-import { ITheme } from '@interfaces/styles.interface'
-import Theme, { GlobalStyles } from '@themes/index'
-import '@themes/utils.scss'
-
-Router.events.on('routeChangeStart', (url) => {
+Router.events.on('routeChangeStart', () => {
   NProgress.start()
 })
 Router.events.on('routeChangeComplete', () => NProgress.done())
 Router.events.on('routeChangeError', () => NProgress.done())
 
-export default class MyApp extends NextApp<ITheme> {
-  componentDidMount () {
+const MyApp: NextComponentType<AppContext, AppInitialProps, AppProps> = ({ Component, pageProps }) => {
+  useEffect(() => {
     const jssStyles = document.querySelector('#jss-server-side')
 
     if (jssStyles?.parentNode) {
@@ -27,23 +26,23 @@ export default class MyApp extends NextApp<ITheme> {
     if (progressOverlay?.parentNode) {
       progressOverlay.parentNode.removeChild(progressOverlay)
     }
-  }
+  })
 
-  render () {
-    const { Component, pageProps } = this.props
+  const theme = generateTheme({ palette: AvailablePalettes.DARK, design: AvailableDesigns.DEFAULT })
 
-    return (
-      <Fragment>
-        <StylesProvider injectFirst>
-          <ThemeProvider theme={Theme}>
-            <StyledThemeProvider theme={Theme}>
-              <CssBaseline />
-              <GlobalStyles theme={Theme} />
-              <Component {...pageProps} />
-            </StyledThemeProvider>
-          </ThemeProvider>
-        </StylesProvider>
-      </Fragment>
-    )
-  }
+  return (
+    <Fragment>
+      <StylesProvider injectFirst>
+        <ThemeProvider theme={theme}>
+          <StyledThemeProvider theme={theme}>
+            <CssBaseline />
+            <GlobalStyles />
+            <Component {...pageProps} />
+          </StyledThemeProvider>
+        </ThemeProvider>
+      </StylesProvider>
+    </Fragment>
+  )
 }
+
+export default MyApp

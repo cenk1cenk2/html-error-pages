@@ -9,7 +9,8 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { Fragment } from 'react'
 import { RouteComponentProps } from 'react-router-dom'
-import Loading from '../../public/imgs/logo/loading.svg'
+
+import Loading from '../../assets/imgs/logo/logo.svg'
 
 type Props = Partial<RouteComponentProps>
 

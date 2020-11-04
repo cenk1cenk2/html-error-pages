@@ -1,4 +1,4 @@
-import { AvailableDesigns, AvailablePalettes, generateTheme, GlobalStyles, Theme } from '@cenk1cenk2/react-template-base'
+import { AvailableDesigns, AvailablePalettes, generateTheme, GlobalStyles } from '@cenk1cenk2/react-template-base'
 import { CssBaseline, StylesProvider, ThemeProvider } from '@material-ui/core'
 import '@themes/utils.scss'
 import { NextComponentType } from 'next'
@@ -7,6 +7,7 @@ import Router from 'next/router'
 import NProgress from 'nprogress'
 import React, { Fragment, useEffect } from 'react'
 import { ThemeProvider as StyledThemeProvider } from 'styled-components'
+import '../polyfills'
 
 Router.events.on('routeChangeStart', () => {
   NProgress.start()

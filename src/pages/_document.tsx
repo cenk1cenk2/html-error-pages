@@ -5,7 +5,6 @@ import React, { Fragment } from 'react'
 import { ServerStyleSheet as StyledComponentSheets } from 'styled-components'
 
 import PageLoader from '../themes/page-loader'
-import '../polyfills'
 
 export default class MyDocument extends Document<{ theme: Theme }> {
   static async getInitialProps (ctx: DocumentContext) {
@@ -44,7 +43,6 @@ export default class MyDocument extends Document<{ theme: Theme }> {
         <Html lang="en">
           <Head>
             <link rel="icon" href="/favicon.ico" />
-            <link rel="stylesheet" type="text/css" href="/styles/pageloader.css" />
             <meta name="description" content="kilic.dev!" />
             <meta name="author" content="cenk.kilic" />
             <meta name="description" content="Web site created using create-react-app" />

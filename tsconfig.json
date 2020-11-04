@@ -36,8 +36,14 @@
     "strictNullChecks": false,
     "noEmit": true,
     "noImplicitAny": false,
-    "typeRoots": ["node_modules/@types", "typings", "next", "next/types/global", "types", "node_modules/@cenk1cenk2/react-template-base/types"]
+    "typeRoots": ["node_modules/@types", "typings", "next", "next/types/global", "types", ""]
   },
   "include": ["src"],
+  "files": [
+    "node_modules/@nrwl/react/typings/cssmodule.d.ts",
+    "node_modules/@cenk1cenk2/react-template-base/types/react.d.ts",
+    "node_modules/@cenk1cenk2/react-template-base/types/image.d.ts",
+    "node_modules/@cenk1cenk2/react-template-base/types/styled-components.d.ts"
+  ],
   "exclude": ["node_modules"]
 }

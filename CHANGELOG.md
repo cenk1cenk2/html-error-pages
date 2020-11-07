@@ -1,3 +1,10 @@
+## [2.0.8](https://github.com/cenk1cenk2/html-error-pages/compare/v2.0.7...v2.0.8) (2020-11-07)
+
+
+### Bug Fixes
+
+* fix drone setup? ([a2f00bf](https://github.com/cenk1cenk2/html-error-pages/commit/a2f00bf57db1d62a8ad92524a626bc2ed134faba))
+
 ## [2.0.7](https://github.com/cenk1cenk2/html-error-pages/compare/v2.0.6...v2.0.7) (2020-11-07)
 
 

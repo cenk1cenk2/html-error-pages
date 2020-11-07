@@ -4,6 +4,7 @@ name: default
 trigger:
   event:
     - push
+    - tags
   branch:
     - master
 
@@ -17,6 +18,9 @@ steps:
     image: node:current-alpine
     commands:
       - yarn lint:check
+    when:
+      event:
+        - push
 
   - name: semantic-release
     image: cenk1cenk2/drone-semantic-release
@@ -30,6 +34,17 @@ steps:
         from_secret: github_username
       github_token:
         from_secret: github_token
+    when:
+      event:
+        - push
+
+  - name: build
+    image: node:current-alpine
+    commands:
+      - yarn build
+    when:
+      event:
+        - tags
 
   - name: publish
     image: plugins/docker
@@ -37,12 +52,12 @@ steps:
       dockerfile: Dockerfile
       registry: docker.kilic.dev
       repo: docker.kilic.dev/${DRONE_REPO_NAME,,}
-      commands:
-        - "[ -f /drone/src/.tags ] && cat /drone/src/.tags || echo 'No need to publish new version.' && exit 0"
-        - "/usr/local/bin/dockerd-entrypoint.sh /bin/drone-docker"
       tags:
         - latest
       username:
         from_secret: docker_private_username
       password:
         from_secret: docker_private_password
+    when:
+      event:
+        - tags

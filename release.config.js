@@ -27,16 +27,9 @@ module.exports = {
     ],
     '@semantic-release/changelog',
     [
-      '@semantic-release/exec',
-      {
-        generateNotesCmd: 'echo \'latest,${nextRelease.version}\' > .tags',
-        publishCmd: 'yarn build'
-      }
-    ],
-    [
       '@semantic-release/git',
       {
-        assets: [ 'CHANGELOG.md', 'README.md' ],
+        assets: [ 'CHANGELOG.md', 'README.md', 'config/default.js' ],
         message: 'chore(release): <%= nextRelease.version %> - <%= new Date().toISOString().slice(0,10).replace(/-/g,\'\') %> [skip ci]\n\n<%= nextRelease.notes %>'
       }
     ],

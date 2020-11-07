@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['@cenk1cenk2/eslint-config/react-typescript'],
+  extends: [ '@cenk1cenk2/eslint-config/index', '@cenk1cenk2/eslint-config/typescript', '@cenk1cenk2/eslint-config/react-typescript' ],
   rules: {
     'import/order': [
       'error',
@@ -28,33 +28,12 @@ module.exports = {
           {
             pattern: '@pages/**',
             group: 'index'
-          },
-          {
-            pattern: '@themes/**',
-            group: 'index'
-          },
-          {
-            pattern: '@templates/**',
-            group: 'index'
-          },
-          {
-            pattern: '@page-templates/**',
-            group: 'index'
           }
         ],
-        pathGroupsExcludedImportTypes: [
-          'builtin'
-        ],
+        pathGroupsExcludedImportTypes: [ 'builtin' ],
         groups: [
-          [
-            'builtin',
-            'external'
-          ],
-          [
-            'index',
-            'parent',
-            'sibling'
-          ]
+          [ 'builtin', 'external' ],
+          [ 'index', 'parent', 'sibling' ]
         ],
         'newlines-between': 'always',
         alphabetize: {

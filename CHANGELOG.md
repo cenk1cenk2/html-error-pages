@@ -1,3 +1,10 @@
+## [2.0.5](https://github.com/cenk1cenk2/html-error-pages/compare/v2.0.4...v2.0.5) (2020-11-07)
+
+
+### Bug Fixes
+
+* add renovate config ([7ff62fa](https://github.com/cenk1cenk2/html-error-pages/commit/7ff62fa6114a4dbc9a2daa413fbe24e6acde6541))
+
 ## [2.0.4](https://github.com/cenk1cenk2/html-error-pages/compare/v2.0.3...v2.0.4) (2020-11-07)
 
 

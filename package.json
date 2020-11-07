@@ -75,7 +75,7 @@
     "babel-loader": "^8.1.0",
     "babel-plugin-styled-components": "^1.11.1",
     "babel-preset-minify": "^0.5.1",
-    "commitizen": "^4.1.2",
+    "commitizen": "^4.2.2",
     "config": "^3.3.2",
     "core-js": "^3.7.0",
     "css-loader": "^5.0.1",

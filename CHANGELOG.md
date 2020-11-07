@@ -1,3 +1,11 @@
+## [2.0.7](https://github.com/cenk1cenk2/html-error-pages/compare/v2.0.6...v2.0.7) (2020-11-07)
+
+
+### Bug Fixes
+
+* change drone setup and bump dep ([d5740b4](https://github.com/cenk1cenk2/html-error-pages/commit/d5740b4b804e64a5351f88c1a94c7917a595a244))
+* **deps:** update dependency @cenk1cenk2/react-template-components to ^1.0.9 ([50b199f](https://github.com/cenk1cenk2/html-error-pages/commit/50b199ff8cfc4580a3733abeb5dd7a001d9adf75))
+
 ## [2.0.6](https://github.com/cenk1cenk2/html-error-pages/compare/v2.0.5...v2.0.6) (2020-11-07)
 
 

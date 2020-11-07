@@ -37,7 +37,9 @@ steps:
       dockerfile: Dockerfile
       registry: docker.kilic.dev
       repo: docker.kilic.dev/${DRONE_REPO_NAME,,}
-      entrypoint: "[ -f /drone/src/.tags ] && cat /drone/src/.tags && /usr/local/bin/dockerd-entrypoint.sh /bin/drone-docker || echo 'No need to publish new version.'"
+      commands:
+        - "[ -f /drone/src/.tags ] && cat /drone/src/.tags || echo 'No need to publish new version.' && exit 0"
+        - "/usr/local/bin/dockerd-entrypoint.sh /bin/drone-docker"
       tags:
         - latest
       username:

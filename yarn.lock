@@ -1027,10 +1027,10 @@
     eslint-plugin-import "^2.22.1"
     eslint-plugin-react-hooks "^4.2.0"
 
-"@cenk1cenk2/react-template-base@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@cenk1cenk2/react-template-base/-/react-template-base-1.0.4.tgz#d3126d0702bed94f8219ae62b29aa89e85ab58eb"
-  integrity sha512-73lxaOf8aBs7aVeiT+VP/+1NT0uI74F7VxysAvbGGTrbMHL/xxGjZRfBtQUoNtp13U+Dab2sW/6A3Nvy1VcdJg==
+"@cenk1cenk2/react-template-base@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@cenk1cenk2/react-template-base/-/react-template-base-1.0.5.tgz#931985e9f2a469538baa696b396423736bbe1fdd"
+  integrity sha512-QgnLALdsSmhZzqKrUGoC2vwvJDL3klUZc5rB6iDBK/80HfGVEmiFeVO5fguTLU3ZyWHn7x7YGEgqIEcJci+aMw==
 
 "@cenk1cenk2/react-template-components@^1.0.9":
   version "1.0.9"

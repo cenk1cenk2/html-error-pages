@@ -4,7 +4,7 @@ name: default
 trigger:
   event:
     - push
-    - tags
+    - tag
   branch:
     - master
 
@@ -44,7 +44,7 @@ steps:
       - yarn build
     when:
       event:
-        - tags
+        - tag
 
   - name: publish
     image: plugins/docker
@@ -60,4 +60,4 @@ steps:
         from_secret: docker_private_password
     when:
       event:
-        - tags
+        - tag

@@ -1,49 +1,37 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "paths": {
-      "@src/*": ["*"],
-      "@components/*": ["components/*"],
-      "@hooks/*": ["hooks/*"],
-      "@interfaces/*": ["interfaces/*"],
-      "@context/*": ["interfaces/pages/*"],
-      "@pages/*": ["pages/*"],
-      "@themes/*": ["themes/*"],
-      "@templates/*": ["templates/*"],
-      "@page-templates/*": ["templates/pages/*"]
-    },
+    "module": "esnext",
     "lib": ["dom", "dom.iterable", "esnext"],
+    "moduleResolution": "node",
+    "jsx": "react",
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "esnext",
-    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
     "declaration": false,
     "sourceMap": true,
     "removeComments": true,
     "noUnusedLocals": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "outDir": "./dist",
-    "rootDir": ".",
-    "baseUrl": "src",
-    "strictNullChecks": false,
     "noEmit": true,
-    "noImplicitAny": false,
-    "typeRoots": ["node_modules/@types", "typings", "next", "next/types/global", "types", ""]
+    "rootDir": ".",
+    "baseUrl": ".",
+    "outDir": "./dist",
+    "typeRoots": ["node_modules/@types", "types"],
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@interfaces/*": ["src/interfaces/*"],
+      "@context/*": ["src/interfaces/pages/*"],
+      "@pages/*": ["src/pages/*"],
+      "@assets/*": ["assets/*"]
+    }
   },
-  "include": ["src"],
-  "files": [
-    "node_modules/@nrwl/react/typings/cssmodule.d.ts",
-    "node_modules/@cenk1cenk2/react-template-base/types/react.d.ts",
-    "node_modules/@cenk1cenk2/react-template-base/types/image.d.ts",
-    "node_modules/@cenk1cenk2/react-template-base/types/styled-components.d.ts"
-  ],
-  "exclude": ["node_modules"]
+  "include": ["src", "types"],
+  "files": ["./types/config.d.ts", "node_modules/@cenk1cenk2/react-template-base/types/image.d.ts", "node_modules/@cenk1cenk2/react-template-base/types/styled-components.d.ts"]
 }

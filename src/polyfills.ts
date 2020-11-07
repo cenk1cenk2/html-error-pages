@@ -1,2 +1,2 @@
-import 'fontsource-lato'
 import 'roboto-fontface'
+import 'fontsource-varela'

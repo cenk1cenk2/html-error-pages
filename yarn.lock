@@ -998,7 +998,7 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@cenk1cenk2/cz-cc@^1.0.3":
+"@cenk1cenk2/cz-cc@^1.2.7":
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/@cenk1cenk2/cz-cc/-/cz-cc-1.2.7.tgz#90ccf65c45e850828d945e36077047eb66ae4a7d"
   integrity sha512-cMWBT/jSwXBhqQ4dfbKFkgaDBjdSiq8JSaU7iJtNGBcZz2rcvotVwD0jp98q6e+j/HBKhdZ5AGhZSJ7r1ksBtw==
@@ -1027,15 +1027,15 @@
     eslint-plugin-import "^2.22.1"
     eslint-plugin-react-hooks "^4.2.0"
 
-"@cenk1cenk2/react-template-base@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@cenk1cenk2/react-template-base/-/react-template-base-1.0.3.tgz#7f7bff1e782e4b0060b25255ae95704feaa47281"
-  integrity sha512-F2yMHLMhq1u/G4EhaL8sDg88cSiCD6f3FsieN4a0mS5MV+zJcPbIkkNcwSW2DMZcA5uwL1T8qqoMvXJ1+tY5tg==
+"@cenk1cenk2/react-template-base@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@cenk1cenk2/react-template-base/-/react-template-base-1.0.4.tgz#d3126d0702bed94f8219ae62b29aa89e85ab58eb"
+  integrity sha512-73lxaOf8aBs7aVeiT+VP/+1NT0uI74F7VxysAvbGGTrbMHL/xxGjZRfBtQUoNtp13U+Dab2sW/6A3Nvy1VcdJg==
 
-"@cenk1cenk2/react-template-components@^1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@cenk1cenk2/react-template-components/-/react-template-components-1.0.7.tgz#bed26f0c88fc2912bc8724677d68e8c7870c865b"
-  integrity sha512-iU45vOMHL0TqPV2253vq7NatDZy1tMk4Az6zft40B5Go1kk/8M1YYB8TOUR4GLwgiXvbbicvEFrhDf2FJHWRYA==
+"@cenk1cenk2/react-template-components@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@cenk1cenk2/react-template-components/-/react-template-components-1.0.8.tgz#3860005ef52b8b0374dcbc31b33d3ca7e64a42f4"
+  integrity sha512-K3OR9gSRi6IhQqOsxOzEatAnFJA7oSJRHyfTJMsy3c7UiGxXECUnGvWnRv7O7MBI87goTQSrV4ZQ/o6Qfch/Qw==
 
 "@commitlint/execute-rule@^11.0.0":
   version "11.0.0"

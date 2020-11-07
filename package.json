@@ -48,8 +48,8 @@
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "styled-components": "^5.2.1",
-    "@cenk1cenk2/react-template-base": "^1.0.3",
-    "@cenk1cenk2/react-template-components": "^1.0.7"
+    "@cenk1cenk2/react-template-base": "^1.0.4",
+    "@cenk1cenk2/react-template-components": "^1.0.8"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.1",
@@ -62,7 +62,7 @@
     "@babel/preset-react": "^7.12.5",
     "@babel/preset-typescript": "^7.12.1",
     "@babel/runtime-corejs3": "^7.12.5",
-    "@cenk1cenk2/cz-cc": "^1.0.3",
+    "@cenk1cenk2/cz-cc": "^1.2.7",
     "@cenk1cenk2/eslint-config": "0.4.22",
     "@svgr/webpack": "^5.4.0",
     "@types/material-ui": "^0.21.8",
@@ -75,7 +75,7 @@
     "babel-loader": "^8.1.0",
     "babel-plugin-styled-components": "^1.11.1",
     "babel-preset-minify": "^0.5.1",
-    "commitizen": "^4.1.2",
+    "commitizen": "^4.2.2",
     "config": "^3.3.2",
     "core-js": "^3.7.0",
     "css-loader": "^5.0.1",
@@ -98,7 +98,7 @@
     "typeface-karla": "^1.1.13",
     "typescript": "^4.0.5",
     "url-loader": "^4.1.1",
-    "webpack": "^4.44.2",
+    "webpack": "^5.4.0",
     "webpack-cli": "^4.2.0",
     "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^5.3.0"

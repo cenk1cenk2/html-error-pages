@@ -1027,6 +1027,16 @@
     eslint-plugin-import "^2.22.1"
     eslint-plugin-react-hooks "^4.2.0"
 
+"@cenk1cenk2/react-template-base@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@cenk1cenk2/react-template-base/-/react-template-base-1.0.3.tgz#7f7bff1e782e4b0060b25255ae95704feaa47281"
+  integrity sha512-F2yMHLMhq1u/G4EhaL8sDg88cSiCD6f3FsieN4a0mS5MV+zJcPbIkkNcwSW2DMZcA5uwL1T8qqoMvXJ1+tY5tg==
+
+"@cenk1cenk2/react-template-components@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@cenk1cenk2/react-template-components/-/react-template-components-1.0.7.tgz#bed26f0c88fc2912bc8724677d68e8c7870c865b"
+  integrity sha512-iU45vOMHL0TqPV2253vq7NatDZy1tMk4Az6zft40B5Go1kk/8M1YYB8TOUR4GLwgiXvbbicvEFrhDf2FJHWRYA==
+
 "@commitlint/execute-rule@^11.0.0":
   version "11.0.0"
   resolved "https://registry.yarnpkg.com/@commitlint/execute-rule/-/execute-rule-11.0.0.tgz#3ed60ab7a33019e58d90e2d891b75d7df77b4b4d"

@@ -41,7 +41,7 @@
     "@fortawesome/react-fontawesome": "^0.1.12",
     "@material-ui/core": "^4.11.0",
     "@material-ui/lab": "^4.0.0-alpha.56",
-    "csstype": "^3.0.4",
+    "csstype": "^3.0.5",
     "http-status": "^1.4.2",
     "react": "^17.0.1",
     "react-animations": "^1.0.0",

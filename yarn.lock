@@ -1027,15 +1027,15 @@
     eslint-plugin-import "^2.22.1"
     eslint-plugin-react-hooks "^4.2.0"
 
-"@cenk1cenk2/react-template-base@^1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@cenk1cenk2/react-template-base/-/react-template-base-1.0.5.tgz#931985e9f2a469538baa696b396423736bbe1fdd"
-  integrity sha512-QgnLALdsSmhZzqKrUGoC2vwvJDL3klUZc5rB6iDBK/80HfGVEmiFeVO5fguTLU3ZyWHn7x7YGEgqIEcJci+aMw==
+"@cenk1cenk2/react-template-base@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@cenk1cenk2/react-template-base/-/react-template-base-1.1.0.tgz#ea9245ac576f2f3ec503b6d9b3a930d11ea31e1f"
+  integrity sha512-8nZnEtF5VXiS1aOHRWwWUzbWGxlj/5OtjwXDO3Nz9w7j4YiuIUh62RAbMa9Nwaik6OsocQXyMjPNu8H3H3A4zg==
 
-"@cenk1cenk2/react-template-components@^1.0.9":
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/@cenk1cenk2/react-template-components/-/react-template-components-1.0.9.tgz#65d5ed35d7f8b242fb027495e1a914d0103f3537"
-  integrity sha512-e//ua7wX0XDx+e1iFVofIHlp1FrHnvdBtpPOxvP+pFjVqWm5csEUvWb2DF/h59XPolv+96j904hprj3/HbVWbQ==
+"@cenk1cenk2/react-template-components@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@cenk1cenk2/react-template-components/-/react-template-components-1.1.0.tgz#f4fe8590e5b84ff440121b04956d5bf466f8379f"
+  integrity sha512-iFlQNf/gHkGpMPwzKccoZYK0q3OvcDWIpiVzm9LNymsEVYsgSTr0VY7KE7xl9ibhZzC4XOxgHbWupxsb27jgBQ==
 
 "@commitlint/execute-rule@^11.0.0":
   version "11.0.0"

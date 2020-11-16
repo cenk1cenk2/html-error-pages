@@ -1,3 +1,13 @@
+## [2.0.9](https://github.com/cenk1cenk2/html-error-pages/compare/v2.0.8...v2.0.9) (2020-11-16)
+
+
+### Bug Fixes
+
+* **deps:** update all fast ring minor dependencies ([b281b69](https://github.com/cenk1cenk2/html-error-pages/commit/b281b698da5cbba579ac72d9d3d542a6f272c26e))
+* **deps:** update all fast ring minor dependencies to ^1.1.0 ([45be9eb](https://github.com/cenk1cenk2/html-error-pages/commit/45be9eb150c4998ce24e2d1a9aaa3e6f240fdbb0))
+* **deps:** update dependency @cenk1cenk2/react-template-base to ^1.0.5 ([ddb32d5](https://github.com/cenk1cenk2/html-error-pages/commit/ddb32d5b75e8e586ab6eb709f37aa67dd0077786))
+* **deps:** update dependency csstype to ^3.0.5 ([364a507](https://github.com/cenk1cenk2/html-error-pages/commit/364a5074b539202134fab39cff308f7ae5d753fc))
+
 ## [2.0.8](https://github.com/cenk1cenk2/html-error-pages/compare/v2.0.7...v2.0.8) (2020-11-07)
 
 

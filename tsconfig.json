@@ -33,5 +33,11 @@
     }
   },
   "include": ["src", "types"],
-  "files": ["./types/config.d.ts", "node_modules/@cenk1cenk2/react-template-base/types/image.d.ts", "node_modules/@cenk1cenk2/react-template-base/types/styled-components.d.ts"]
+  "files": [
+    "./types/config.d.ts",
+    "node_modules/@cenk1cenk2/react-template-base/types/image.d.ts",
+    "node_modules/@cenk1cenk2/react-template-base/types/styled-components.d.ts",
+    "node_modules/@cenk1cenk2/react-template-base/types/recoil.d.ts",
+    "node_modules/@cenk1cenk2/react-template-base/types/react.d.ts"
+  ]
 }

@@ -1,2 +1,2 @@
 import 'roboto-fontface'
-import 'fontsource-varela'
+import 'fontsource-frank-ruhl-libre'

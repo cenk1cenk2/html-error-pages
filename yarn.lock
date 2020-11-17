@@ -1032,7 +1032,7 @@
   resolved "https://registry.yarnpkg.com/@cenk1cenk2/react-template-base/-/react-template-base-1.3.0.tgz#3c60681b8ca97f7793ab8a695bffc138d8608254"
   integrity sha512-SS/N/SY/FhQ/f0jIFNN6R7/OQFSjmEd6xZ0ReqMp+vJWHqe7ZVfvmG3D2FnAeCs0IcsS4YpFuLb+jESo1CIRSg==
 
-"@cenk1cenk2/react-template-components@^1.3.0":
+"@cenk1cenk2/react-template-components@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@cenk1cenk2/react-template-components/-/react-template-components-1.4.0.tgz#9b928f4ed7179e4a40595d72bf0850307e5c80c2"
   integrity sha512-7BlOIwlpSmaVrCJEeB7u3y2RGrvFClLAlQDm5TYvs1RMDG2ba9nIZyz7Y1rBKIZhNkg7YbR04jjBl7n0X5pvLg==

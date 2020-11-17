@@ -1032,10 +1032,10 @@
   resolved "https://registry.yarnpkg.com/@cenk1cenk2/react-template-base/-/react-template-base-1.1.1.tgz#964dd8b2522c07c0039c5f1f6c571d9a10dfde24"
   integrity sha512-Hnt20mloH1QiVZVh6Xv5ndkSkocCWPm03R69O5Z7ffloeBCKd28GzL+54DLlTaHT126K+3U58pNKKX/GY/u8nQ==
 
-"@cenk1cenk2/react-template-components@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@cenk1cenk2/react-template-components/-/react-template-components-1.2.0.tgz#16f97a8969945210581377872814f6c1fb3f40a7"
-  integrity sha512-CDipWZxU6FIqeyicrPHyU6FhT+qthKtn11iBLmVN2xR3FKdcENDbhQ2mdJtbAjxAnW9kaNFfqHepQo8zT5zFJw==
+"@cenk1cenk2/react-template-components@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@cenk1cenk2/react-template-components/-/react-template-components-1.3.0.tgz#9f8507c8c1cad3c83bb8ebd28bcdd4a5b021d10d"
+  integrity sha512-zXDnUgCXc6TIbVJFh7WYvCUFar4+cJfB/vD6+jNenMUFB7egbLNWefzf6Yq5ZCcyXiQHmf76x2RMm3gVQ2nO9g==
 
 "@commitlint/execute-rule@^11.0.0":
   version "11.0.0"

@@ -61,3 +61,6 @@ steps:
     when:
       event:
         - tag
+
+image_pull_secrets:
+  - dockerconfigjson

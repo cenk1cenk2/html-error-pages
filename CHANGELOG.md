@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/cenk1cenk2/html-error-pages/compare/v2.0.12...v2.1.0) (2020-11-17)
+
+
+### Features
+
+* added pull secret ([ba206ed](https://github.com/cenk1cenk2/html-error-pages/commit/ba206ed9003682f9f579b5a7f2d1444a7d6bd050))
+
 ## [2.0.12](https://github.com/cenk1cenk2/html-error-pages/compare/v2.0.11...v2.0.12) (2020-11-17)
 
 

@@ -5,7 +5,7 @@ const package = readPkgUp.sync()
 module.exports = {
   package: {
     name: package.packageJson.name,
-    version: '2.0.12'
+    version: '2.1.0'
   },
   mainPageUrl: 'https://kilic.dev'
 }

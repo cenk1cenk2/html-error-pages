@@ -1,3 +1,10 @@
+## [2.1.1](https://github.com/cenk1cenk2/html-error-pages/compare/v2.1.0...v2.1.1) (2020-11-17)
+
+
+### Bug Fixes
+
+* added docker ignore for smaller context ([6001313](https://github.com/cenk1cenk2/html-error-pages/commit/6001313e531e773937b0725ab705f4f70aca4c5d))
+
 # [2.1.0](https://github.com/cenk1cenk2/html-error-pages/compare/v2.0.12...v2.1.0) (2020-11-17)
 
 

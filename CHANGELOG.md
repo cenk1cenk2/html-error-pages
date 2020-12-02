@@ -1,3 +1,13 @@
+## [2.1.2](https://github.com/cenk1cenk2/html-error-pages/compare/v2.1.1...v2.1.2) (2020-12-02)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @fortawesome/react-fontawesome to ^0.1.13 ([a10c5e7](https://github.com/cenk1cenk2/html-error-pages/commit/a10c5e7a3067b9ba485ca3af13718ffb33e79870))
+* **deps:** update dependency @material-ui/core to ^4.11.1 ([c01ee4e](https://github.com/cenk1cenk2/html-error-pages/commit/c01ee4e6de7f7373036b648fe433d8019b4ce652))
+* **deps:** update dependency @material-ui/core to ^4.11.2 ([1e74532](https://github.com/cenk1cenk2/html-error-pages/commit/1e74532661a5715253d1cae0ef5e07a2ac75a1a8))
+* **deps:** update dependency @material-ui/lab to ^4.0.0-alpha.57 ([be8110f](https://github.com/cenk1cenk2/html-error-pages/commit/be8110f5f3aa725c40ffca62b67dbdb329462ba4))
+
 ## [2.1.1](https://github.com/cenk1cenk2/html-error-pages/compare/v2.1.0...v2.1.1) (2020-11-17)
 
 

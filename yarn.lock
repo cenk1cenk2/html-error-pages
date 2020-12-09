@@ -4406,10 +4406,10 @@ fontsource-raleway@^3.1.5:
   resolved "https://registry.yarnpkg.com/fontsource-raleway/-/fontsource-raleway-3.1.5.tgz#10b32c368c8aa3657abca1a50bac190db217ccd9"
   integrity sha512-VbwUVmVyq5FSVCE4r3gAtplMj+gZYretsyZdt2P3LLOtrdwfCjl/TcYULexcpminPpcX4JJWBxwyM9tyzM21Ng==
 
-fontsource-varela@^3.0.9:
-  version "3.0.9"
-  resolved "https://registry.yarnpkg.com/fontsource-varela/-/fontsource-varela-3.0.9.tgz#5b5ea41bd58c33383f9bef7368dae494398c792a"
-  integrity sha512-yxYhgCClJQ4w+NC8XWQobL9hiwUU7JAJ/JzBUG9kwncRRF5705sguanJTtwK7V/zhoplBMY9j1+CYh+7jfxQDw==
+fontsource-varela@^3.1.5:
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/fontsource-varela/-/fontsource-varela-3.1.5.tgz#df70eb9a697f963cc92a0b55a82b3e046dfbc534"
+  integrity sha512-oPqUu2Dxsctz8JmJI9UrzYH0RAFuFQLsXU3BmMpfxKm/oDCN74qTE8v4bzirZ23OEL4Zi3wJsSfaTYxOBosJ2w==
 
 for-in@^1.0.2:
   version "1.0.2"

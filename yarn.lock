@@ -4396,10 +4396,10 @@ follow-redirects@^1.0.0:
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.0.tgz#b42e8d93a2a7eea5ed88633676d6597bc8e384db"
   integrity sha512-aq6gF1BEKje4a9i9+5jimNFIpq4Q1WiwBToeRK5NvZBd/TRsmW8BsJfOEGkr76TbOyPVD3OVDN910EcUNtRYEA==
 
-fontsource-frank-ruhl-libre@^3.1.3:
-  version "3.1.3"
-  resolved "https://registry.yarnpkg.com/fontsource-frank-ruhl-libre/-/fontsource-frank-ruhl-libre-3.1.3.tgz#1ac57f26683275c80456b1400ca319ee9f58c9ee"
-  integrity sha512-utoqPQO71dyUWeR0W8NqoDjwpz5E0dsSWkc/cywbrkznU9M+IWSw74keFVUt/kPYaHXhHK4v6xBllqCz3aihnA==
+fontsource-frank-ruhl-libre@^3.1.4:
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/fontsource-frank-ruhl-libre/-/fontsource-frank-ruhl-libre-3.1.4.tgz#40c5e46d7ba2fb2cbd11eca64294fed2b4f8f01e"
+  integrity sha512-TwJyoKBlQbsp0a29WQLDJoMwkZ4Etm0D36ZZ9Fy0mVi9pCMjvWJILZl2BzsoZbBobAxeMyRgAVGirVjl8gtR8w==
 
 fontsource-raleway@^3.0.9:
   version "3.0.9"

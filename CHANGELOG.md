@@ -1,3 +1,10 @@
+## [2.1.6](https://github.com/cenk1cenk2/html-error-pages/compare/v2.1.5...v2.1.6) (2020-12-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @cenk1cenk2/react-template-components to v2 ([f2fc3bc](https://github.com/cenk1cenk2/html-error-pages/commit/f2fc3bcb938062d72c072e16a09d60bc40a51a4d))
+
 ## [2.1.5](https://github.com/cenk1cenk2/html-error-pages/compare/v2.1.4...v2.1.5) (2020-12-12)
 
 

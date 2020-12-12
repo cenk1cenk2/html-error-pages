@@ -4420,10 +4420,10 @@ fontsource-frank-ruhl-libre@^3.1.5:
   resolved "https://registry.yarnpkg.com/fontsource-frank-ruhl-libre/-/fontsource-frank-ruhl-libre-3.1.5.tgz#1774fc74f3eca6a152173ae71f68ab711f02ce4d"
   integrity sha512-y+DU2eI7O9NPC/UfZgJsJhjyqnTs6iovdlF4KkqUlABBrYRo+cKuMrHY0KAyobvH8JLP3DKH3ksP9DlfBUu+Yw==
 
-fontsource-raleway@^3.1.5:
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/fontsource-raleway/-/fontsource-raleway-3.1.5.tgz#10b32c368c8aa3657abca1a50bac190db217ccd9"
-  integrity sha512-VbwUVmVyq5FSVCE4r3gAtplMj+gZYretsyZdt2P3LLOtrdwfCjl/TcYULexcpminPpcX4JJWBxwyM9tyzM21Ng==
+fontsource-raleway@^3.1.6:
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/fontsource-raleway/-/fontsource-raleway-3.1.6.tgz#a8d313f386c16b5911c8ea5aa8c203e937c2432e"
+  integrity sha512-tuQRSvb/iTTEswaXXRctMru2mXn7SDOAP9SNEVlB3HgPKNsZH24eMrWbakYTX67KW8mI5CcEEH3dlGhbsvxD7g==
 
 fontsource-varela@^3.1.5:
   version "3.1.5"

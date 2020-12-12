@@ -1,3 +1,11 @@
+## [2.1.3](https://github.com/cenk1cenk2/html-error-pages/compare/v2.1.2...v2.1.3) (2020-12-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @cenk1cenk2/react-template-base to ^1.3.1 ([39ce1e3](https://github.com/cenk1cenk2/html-error-pages/commit/39ce1e3772388ff422a0ef43269b706eaf537b0d))
+* **deps:** update dependency use-debounce to ^5.2.0 ([116e503](https://github.com/cenk1cenk2/html-error-pages/commit/116e50398dbbc4809ebb214b27267e1315077d19))
+
 ## [2.1.2](https://github.com/cenk1cenk2/html-error-pages/compare/v2.1.1...v2.1.2) (2020-12-02)
 
 

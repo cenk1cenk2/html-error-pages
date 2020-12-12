@@ -1022,10 +1022,26 @@
     styled-components "^5.2.1"
     use-debounce "^5.2.0"
 
-"@cenk1cenk2/react-template-components@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@cenk1cenk2/react-template-components/-/react-template-components-1.4.0.tgz#9b928f4ed7179e4a40595d72bf0850307e5c80c2"
-  integrity sha512-7BlOIwlpSmaVrCJEeB7u3y2RGrvFClLAlQDm5TYvs1RMDG2ba9nIZyz7Y1rBKIZhNkg7YbR04jjBl7n0X5pvLg==
+"@cenk1cenk2/react-template-components@^1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@cenk1cenk2/react-template-components/-/react-template-components-1.4.1.tgz#3cb34dc62a9924f1df0aea42a4fbe6eb10507071"
+  integrity sha512-EV5vxxEd6dpVfgFEgsP+N6kDiVjG5YVUBLSk2RXHBLyCjbz0ArhHUA6xsfv2F0mIdWXujz8J/zkQ1S6K4+AHaw==
+  dependencies:
+    "@fortawesome/fontawesome-svg-core" "^1.2.32"
+    "@fortawesome/free-solid-svg-icons" "^5.15.1"
+    "@fortawesome/react-fontawesome" "^0.1.13"
+    "@material-ui/core" "^4.11.2"
+    clsx "^1.1.1"
+    config "^3.3.3"
+    document-register-element "^1.14.10"
+    nprogress "^0.2.0"
+    react "^17.0.1"
+    react-dom "^17.0.1"
+    react-is "^17.0.1"
+    react-router-dom "^5.2.0"
+    recoil "^0.1.2"
+    styled-components "^5.2.1"
+    use-debounce "^5.2.0"
 
 "@commitlint/execute-rule@^11.0.0":
   version "11.0.0"

@@ -1,3 +1,10 @@
+## [2.1.7](https://github.com/cenk1cenk2/html-error-pages/compare/v2.1.6...v2.1.7) (2020-12-12)
+
+
+### Bug Fixes
+
+* fix dependencies to new library ([12aa695](https://github.com/cenk1cenk2/html-error-pages/commit/12aa69572d5cd8e22b8b6c9215492b62183372be))
+
 ## [2.1.6](https://github.com/cenk1cenk2/html-error-pages/compare/v2.1.5...v2.1.6) (2020-12-12)
 
 

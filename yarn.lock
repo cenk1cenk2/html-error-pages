@@ -1001,26 +1001,10 @@
     eslint-plugin-import "^2.22.1"
     eslint-plugin-react-hooks "^4.2.0"
 
-"@cenk1cenk2/react-template-base@^1.3.1":
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/@cenk1cenk2/react-template-base/-/react-template-base-1.3.1.tgz#16db8adff606d328c04072976da767379de5b558"
-  integrity sha512-VVjhQAFJKQB4nXa1H97SyhVghv2+bQUT0jLK/4d3tLeeMUI/rlUzfcMAD/Vw5qW22w/VIcIfLtR8Im7+0n9sxg==
-  dependencies:
-    "@fortawesome/fontawesome-svg-core" "^1.2.32"
-    "@fortawesome/free-solid-svg-icons" "^5.15.1"
-    "@fortawesome/react-fontawesome" "^0.1.13"
-    "@material-ui/core" "^4.11.2"
-    clsx "^1.1.1"
-    config "^3.3.3"
-    document-register-element "^1.14.10"
-    nprogress "^0.2.0"
-    react "^17.0.1"
-    react-dom "^17.0.1"
-    react-is "^17.0.1"
-    react-router-dom "^5.2.0"
-    recoil "^0.1.2"
-    styled-components "^5.2.1"
-    use-debounce "^5.2.0"
+"@cenk1cenk2/react-template-base@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@cenk1cenk2/react-template-base/-/react-template-base-2.0.1.tgz#2199b290c441c0019ebc5763cf4877db7f98baff"
+  integrity sha512-FsPC9TE3QU1ZCNNDN62YAs6KIdIAyFWU2KhMOwZabqBNSda/GpttYtzaLOarlzAldrNJK6f1LABLbXei9Kms4Q==
 
 "@cenk1cenk2/react-template-components@^1.4.1":
   version "1.4.1"

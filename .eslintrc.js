@@ -28,6 +28,10 @@ module.exports = {
           {
             pattern: '@pages/**',
             group: 'index'
+          },
+          {
+            pattern: '@cenk1cenk2/**',
+            group: 'index'
           }
         ],
         pathGroupsExcludedImportTypes: [ 'builtin' ],

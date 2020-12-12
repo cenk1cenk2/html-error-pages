@@ -38,22 +38,20 @@
   "dependencies": {
     "@cenk1cenk2/react-template-base": "^2.0.1",
     "@cenk1cenk2/react-template-components": "^2.0.0",
+    "@cenk1cenk2/react-template-page-loader": "^1.0.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/react-fontawesome": "^0.1.13",
     "@material-ui/core": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.57",
-    "csstype": "^3.0.5",
     "http-status": "^1.5.0",
     "nprogress": "^0.2.0",
     "react": "^17.0.1",
     "react-animations": "^1.0.0",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
-    "recoil": "^0.1.2",
     "styled-components": "^5.2.1",
-    "use-debounce": "^5.2.0",
-    "use-progress": "^2.0.1"
+    "use-debounce": "^5.2.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.10",

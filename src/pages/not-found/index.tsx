@@ -1,5 +1,4 @@
 import { ReactComponent as LogoImage } from '@assets/img/logo.svg'
-import { Pulldown } from '@cenk1cenk2/react-template-components'
 import { faArrowLeft, faRedo } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Button, Grid, Typography } from '@material-ui/core'
@@ -7,6 +6,8 @@ import { Skeleton } from '@material-ui/lab'
 import httpStatus from 'http-status'
 import React, { Fragment } from 'react'
 import { useLocation } from 'react-router'
+
+import { Pulldown } from '@cenk1cenk2/react-template-components'
 
 const NotFound: React.FC = () => {
   const router = new URLSearchParams(useLocation().search)

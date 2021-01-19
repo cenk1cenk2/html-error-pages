@@ -79,7 +79,7 @@
     "babel-preset-minify": "^0.5.1",
     "commitizen": "^4.2.3",
     "config": "^3.3.3",
-    "core-js": "^3.8.2",
+    "core-js": "^3.8.3",
     "css-loader": "^5.0.1",
     "error-overlay-webpack-plugin": "^0.4.1",
     "eslint": "^7.18.0",

@@ -81,7 +81,7 @@
     "config": "^3.3.3",
     "core-js": "^3.8.3",
     "css-loader": "^5.0.1",
-    "error-overlay-webpack-plugin": "^0.4.1",
+    "error-overlay-webpack-plugin": "^0.4.2",
     "eslint": "^7.19.0",
     "eslint-plugin-react": "^7.22.0",
     "file-loader": "^6.2.0",

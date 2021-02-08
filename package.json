@@ -80,7 +80,7 @@
     "commitizen": "^4.2.3",
     "config": "^3.3.3",
     "core-js": "^3.8.3",
-    "css-loader": "^5.0.1",
+    "css-loader": "^5.0.2",
     "error-overlay-webpack-plugin": "^0.4.2",
     "eslint": "^7.19.0",
     "eslint-plugin-react": "^7.22.0",

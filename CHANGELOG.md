@@ -1,3 +1,10 @@
+## [2.2.1](https://github.com/cenk1cenk2/html-error-pages/compare/v2.2.0...v2.2.1) (2021-02-09)
+
+
+### Bug Fixes
+
+* **deps:** update all fast ring minor dependencies ([4012fe3](https://github.com/cenk1cenk2/html-error-pages/commit/4012fe3028f22cf57e25f773f01939042761f9b0))
+
 # [2.2.0](https://github.com/cenk1cenk2/html-error-pages/compare/v2.1.8...v2.2.0) (2021-02-09)
 
 

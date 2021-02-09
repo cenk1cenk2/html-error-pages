@@ -12,7 +12,11 @@ import { useProgress } from '@cenk1cenk2/react-template-page-loader'
 
 const App: React.FC = () => {
   const theme = generateTheme({ palette: AvailablePalettes.DARK, design: AvailableDesigns.DEFAULT })
-  useProgress({ theme, logo: LogoImage })
+  useProgress({
+    theme,
+    logo: LogoImage,
+    manual: false
+  })
 
   return (
     <StylesProvider injectFirst>

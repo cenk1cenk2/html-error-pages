@@ -1,3 +1,10 @@
+# [2.2.0](https://github.com/cenk1cenk2/html-error-pages/compare/v2.1.8...v2.2.0) (2021-02-09)
+
+
+### Features
+
+* update page loader ([2921149](https://github.com/cenk1cenk2/html-error-pages/commit/29211491e460d4e62d714d70af1e608aac857ae0))
+
 ## [2.1.8](https://github.com/cenk1cenk2/html-error-pages/compare/v2.1.7...v2.1.8) (2021-01-24)
 
 

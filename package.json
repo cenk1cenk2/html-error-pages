@@ -97,7 +97,7 @@
     "roboto-fontface": "^0.10.0",
     "style-loader": "^2.0.0",
     "ts-node": "^9.1.1",
-    "tsconfig-paths-webpack-plugin": "^3.5.0",
+    "tsconfig-paths-webpack-plugin": "^3.5.1",
     "typeface-karla": "^1.1.13",
     "typescript": "^4.2.3",
     "url-loader": "^4.1.1",

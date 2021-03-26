@@ -1,3 +1,12 @@
+## [2.2.2](https://github.com/cenk1cenk2/html-error-pages/compare/v2.2.1...v2.2.2) (2021-03-26)
+
+
+### Bug Fixes
+
+* **deps:** update all minor dependency updates ([6a2961f](https://github.com/cenk1cenk2/html-error-pages/commit/6a2961f28bbfbd0755af5f38dca7444effdf866e))
+* **deps:** update all minor dependency updates to ^17.0.2 ([c6f232e](https://github.com/cenk1cenk2/html-error-pages/commit/c6f232ecde701b270f59768a6000179c953295f6))
+* **deps:** update dependency use-debounce to ^5.2.1 ([b3ebea4](https://github.com/cenk1cenk2/html-error-pages/commit/b3ebea4b9208a924ea801335f5ac8dc6aa4880df))
+
 ## [2.2.1](https://github.com/cenk1cenk2/html-error-pages/compare/v2.2.0...v2.2.1) (2021-02-09)
 
 

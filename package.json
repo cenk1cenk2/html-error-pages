@@ -33,7 +33,7 @@
     ]
   },
   "resolutions": {
-    "**/react-is": "^17.0.1"
+    "**/react-is": "^17.0.2"
   },
   "dependencies": {
     "@cenk1cenk2/react-template-base": "^2.1.0",

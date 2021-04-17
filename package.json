@@ -64,7 +64,7 @@
     "@babel/preset-react": "^7.13.13",
     "@babel/preset-typescript": "^7.13.0",
     "@babel/runtime-corejs3": "^7.13.10",
-    "@cenk1cenk2/cz-cc": "^1.3.14",
+    "@cenk1cenk2/cz-cc": "^1.3.15",
     "@cenk1cenk2/eslint-config": "0.4.36",
     "@svgr/webpack": "^5.5.0",
     "@types/material-ui": "^0.21.8",
